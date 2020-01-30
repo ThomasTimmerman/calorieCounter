@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navBar">
+      <ul class="navList">
+        <li class="calPal"><a href="index.html">calpal</a></li>
+        <li class="pushRight"><a href="recipes.html">Recipes</a></li>
+        <li class="pushRight"><a href="calculate.html">Calculate</a></li>
+      </ul>
+      <div class="colourLine">
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+        <div class="orange"></div>
+        <div class="red"></div>
+      </div>
+    </nav>
+    <div class="foodListContainer">
+      <div class="input-new-item">
+        <input type="text" placeholder="Name" id="name" />
+        <input type="text" placeholder="Carbs" class="macro" id="carbs" />
+        <input type="text" placeholder="Fat" class="macro" id="fat" />
+        <input type="text" placeholder="Protein" class="macro" id="protein" />
+        <input type="text" placeholder="Grams" class="macro" id="grams" />
+        <button onClick="addProduct()" class="button plus">+</button>
+      </div>
+      <div class="foodCalculate">
+        <h1 class="foodList">List of Food Items</h1>
+        <ul id="list"></ul>
+        <div class="calculate">
+          <input type="text" placeholder="calories" id="calories" />
+          <button onClick="calculate()" class="button btncalculate">
+            calculate
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+body {
+  margin: 0px;
+  background-color: #252529;
+  width: 100%;
+  height: 100%;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  background-color: white;
+  color: black;
+  margin: 0px;
+}
+
+.calPal {
+  font-family: "Comfortaa", cursive;
+  font-size: 40px;
+  margin-right: auto;
+}
+
+.pushRight {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: middle;
+}
+
+li {
+  padding: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.colourLine {
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.blue {
+  background-color: #2f4073;
+}
+
+.green {
+  background-color: #048c7f;
+}
+
+.yellow {
+  background-color: #f2c029;
+}
+
+.orange {
+  background-color: #f2ac29;
+}
+
+.red {
+  background-color: #bf4141;
+}
+
+/* .salmonGif {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+.salmonContainer {
+  /* The image used */
+  background-image: url("./images/workout2.svg");
+
+  /* Full height */
+  height: 560px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  /* background-position-x: 40px; */
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.salmonText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtext {
+  font-size: 20px;
+  top: 90%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  font-size: 18px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 75px;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.icon1 img {
+  height: 150px;
+  width: 150px;
+}
+
+.icon2 img {
+  height: 150px;
+  width: 150px;
+}
+
+.icon3 img {
+  height: 150px;
+  width: 150px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 23px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+}
+
+input {
+  border-radius: 50px;
+  border: none;
+  height: 30px;
+  width: 150px;
+  margin: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.input-new-item {
+  margin-top: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.macro {
+  text-align: center;
+  width: 80px;
+  margin: 15px;
+}
+
+.foodList {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.calculate {
+  text-align: center;
+}
+
+.foodCalculate {
+  margin-top: 100px;
+}
+
+.list {
+  color: white;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 0px;
+  margin: 5px;
+}
+
+.button {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #bf4141;
+  width: 25px;
+  height: 25px;
+}
+
+.plus {
+  background-color: #f2ac29;
+  border: none;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.btncalculate {
+  width: 80px;
+  border: none;
+  background-color: #048c7f;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  text-align: center;
+}
+
+.recipe {
+  background-color: white;
+  /* border-radius: 5px; */
+  height: 400px;
+  width: 300px;
+  margin: 50px;
+}
+
+.recipe > img {
+  width: 300px;
+  height: 180px;
+}
