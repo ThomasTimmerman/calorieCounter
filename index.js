@@ -131,7 +131,7 @@ function calculate() {
   lessFatCounter = 0;
   lessProteinCounter = 0;
   var cal = document.getElementById("calories").value;
-  if (cal > 1599) {
+  if (cal > 1599 && carbList.length >= 1 && fatList >= 1 && proteinList >= 1) {
     while (
       totalCarbs < dailyCarbs * 0.99 ||
       totalCarbs > dailyCarbs * 1.01 ||
@@ -259,5 +259,7 @@ function calculate() {
       li.appendChild(rule);
       document.getElementById("list").appendChild(li);
     }
+  } else {
+    console.log("not enough items in list");
   }
 }
