@@ -1,16 +1,16 @@
 var meals = {
-  //   havermout: [75, 7.9, 8.2, 100],
-  //   yoghurt: [11.2, 7.5, 10, 250],
-  //   stoofvlees: [0, 9.5, 20.1, 100],
-  //   friet: [76, 30, 10, 200],
-  //   rulstukjes: [8, 0.7, 21, 100],
-  //   kidneybonen: [20.8, 0.9, 11.5, 150],
-  //   mais: [7.7, 1.4, 2.1, 70],
-  //   tomaten: [8, 0.2, 2, 200],
-  //   rijst: [76, 1.1, 7.3, 100],
-  //   kwark: [20, 0, 45, 500],
-  //   notenreep: [11, 18, 6.5, 50],
-  //   proteinshake: [1.4, 0, 29.4, 30]
+  havermout: [75, 7.9, 8.2, 100],
+  yoghurt: [11.2, 7.5, 10, 250],
+  stoofvlees: [0, 9.5, 20.1, 100],
+  friet: [76, 30, 10, 200],
+  rulstukjes: [8, 0.7, 21, 100],
+  kidneybonen: [20.8, 0.9, 11.5, 150],
+  mais: [7.7, 1.4, 2.1, 70],
+  tomaten: [8, 0.2, 2, 200],
+  rijst: [76, 1.1, 7.3, 100],
+  kwark: [20, 0, 45, 500],
+  notenreep: [11, 18, 6.5, 50],
+  proteinshake: [1.4, 0, 29.4, 30]
 };
 
 function clearInput() {
@@ -131,7 +131,7 @@ function calculate() {
   lessFatCounter = 0;
   lessProteinCounter = 0;
   var cal = document.getElementById("calories").value;
-  if (cal > 1599 && carbList.length >= 1 && fatList >= 1 && proteinList >= 1) {
+  if (cal > 1599 && carbList.length != 0 && fatList != 0 && proteinList != 0) {
     while (
       totalCarbs < dailyCarbs * 0.99 ||
       totalCarbs > dailyCarbs * 1.01 ||
